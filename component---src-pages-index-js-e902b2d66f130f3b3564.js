@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkerwintobing15_github_io=self.webpackChunkerwintobing15_github_io||[]).push([[678],{7704:function(e,t,n){n.r(t);var i=n(7294),o={color:"#232129",padding:16,fontFamily:"-apple-system, Roboto, sans-serif, serif"},l={marginTop:0,marginBottom:64,maxWidth:320};t.default=function(){return i.createElement("main",{style:o},i.createElement("title",null,"Home Page"),i.createElement("h1",{style:l},"Hello World!"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-e902b2d66f130f3b3564.js.map
