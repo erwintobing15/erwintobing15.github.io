@@ -16,10 +16,11 @@ const headingStyles = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>Erwin Tobing</title>
       <h1 style={headingStyles}>
         Hello World!
       </h1>
+      <p>This is my first time using gatsby to build my portofolio</p>
     </main>
   )
 }
