@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "erwintobing15.github.io",
+    siteUrl: "https://erwintobing15.github.io/",
+    title: "Erwin Tobing",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -24,7 +24,7 @@ module.exports = {
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
         display: "standalone",
-        icon: "src/images/icon.png", 
+        icon: "src/images/icon.png",
         crossOrigin: `use-credentials`,
       },
     },
