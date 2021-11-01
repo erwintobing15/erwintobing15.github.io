@@ -16,7 +16,7 @@ import {
 export default function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" className={navbar}>
-      <Link to="/" style={{ textDecoration: 'none' }}>
+      <Link to='/' style={{ textDecoration: 'none' }}>
         <Navbar.Brand className={brand}>
           <StaticImage
             src="../images/icon.png"
