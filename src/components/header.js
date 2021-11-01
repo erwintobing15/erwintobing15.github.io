@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -14,16 +15,23 @@ import {
 
 
 export default function Header() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "icon.png" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" className={navbar}>
       <Link to='/' style={{ textDecoration: 'none' }}>
         <Navbar.Brand className={brand}>
-          <StaticImage
-            src="../images/icon.png"
-            width={50}
-            height={50}
-            alt="Erwin Tobing"
-          />{' '}
+          <Img fixed={data.file.childImageSharp.fixed} />
+          {' '}
           <span className={brandName}>Erwin<br/>Tobing</span>
         </Navbar.Brand>
       </Link>
