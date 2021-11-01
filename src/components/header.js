@@ -16,15 +16,17 @@ import {
 export default function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" className={navbar}>
-      <Navbar.Brand href="/" className={brand}>
-        <StaticImage
-          src="../images/icon.png"
-          width={50}
-          height={50}
-          alt="Erwin Tobing"
-        />{' '}
-        <span className={brandName}>Erwin<br/>Tobing</span>
-      </Navbar.Brand>
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        <Navbar.Brand className={brand}>
+          <StaticImage
+            src="../images/icon.png"
+            width={50}
+            height={50}
+            alt="Erwin Tobing"
+          />{' '}
+          <span className={brandName}>Erwin<br/>Tobing</span>
+        </Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
