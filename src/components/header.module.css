@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&display=swap');
+
+.navbar {
+    margin: auto;
+    max-width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+.brand{
+  align-items: center;
+  display: flex;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  line-height: normal;
+}
+
+.brand-name {
+  color: #50CB93;
+  margin-left: 0.5rem;
+}
+
+.menu {
+  color: black;
+  font-family: 'Crimson Text', serif;
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: #50CB93;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
