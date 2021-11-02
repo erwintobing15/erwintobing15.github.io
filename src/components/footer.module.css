@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  background-color: #f9f9f9;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.social {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
