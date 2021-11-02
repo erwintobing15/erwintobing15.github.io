@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Judson:wght@700&display=swap');
 
 .navbar {
     margin: auto;
     max-width: 90%;
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar {
-    max-width: 100%;
-    padding: 1rem;
-  }
 }
 
 .brand{
@@ -40,5 +32,27 @@
   .menu {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    max-width: 100%;
+  }
+
+  .brand{
+    padding-left: 1rem;
+  }
+
+  .toggler {
+    padding-right: 1rem;
+  }
+
+  .nav-collapse {
+    background-color: #f9f9f9;
+    line-height: 3rem;
+    height:100vh;
+    text-align: center;
+    padding-top: 5rem;
   }
 }

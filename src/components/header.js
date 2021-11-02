@@ -5,7 +5,13 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { StaticImage } from 'gatsby-plugin-image'
-import { navbar, brand, brandName, menu } from './header.module.css'
+import {
+  navbar,
+  navCollapse,
+  brand,
+  brandName,
+  menu
+} from './header.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faLinkedin,
@@ -35,8 +41,10 @@ export default function Header() {
           <span className={brandName}>Erwin<br/>Tobing</span>
         </Navbar.Brand>
       </Link>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <div style={{ paddingRight: '1rem' }}>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+      </div>
+      <Navbar.Collapse id="responsive-navbar-nav" className={navCollapse}>
         <Nav className="me-auto">
         </Nav>
         <Nav className="me-auto">
@@ -52,7 +60,7 @@ export default function Header() {
             </li>
           </ul>
         </Nav>
-        <Nav className="d-flex justify-content-center">
+        <Nav>
           <Nav.Link href="https://linkedin.com/in/erwin-tobing-04a0b119b">
             <FontAwesomeIcon icon={faLinkedin} size="lg" color="#0077b5"/>
           </Nav.Link>
