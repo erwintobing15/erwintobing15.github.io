@@ -1,0 +1,5 @@
+(-) optimize how to import google font
+(-) border between navbar and body
+(-) add navbar mobile close toggle button
+
+npm run deploy
