@@ -41,7 +41,7 @@ export default function Header() {
           <span className={brandName}>Erwin<br/>Tobing</span>
         </Navbar.Brand>
       </Link>
-      <div style={{ paddingRight: '1rem' }}>
+      <div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       </div>
       <Navbar.Collapse id="responsive-navbar-nav" className={navCollapse}>
