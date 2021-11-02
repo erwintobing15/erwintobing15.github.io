@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkerwintobing15_github_io=self.webpackChunkerwintobing15_github_io||[]).push([[682],{5518:function(e,t,n){n.r(t);var u=n(7294),i=n(7768);t.default=function(){return u.createElement(i.Z,{pageTitle:"About | "},u.createElement("h4",null,"About Page"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-307b0762583440c100f9.js.map
