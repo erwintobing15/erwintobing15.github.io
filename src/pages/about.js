@@ -40,13 +40,13 @@ const AboutPage = ({ data }) => {
           <h3>Hello, I'm Erwin</h3>
           <br />
           <p >
-            I’m a fresh graduate from Universitas Komputer Indonesia majoring in computer science. During my time at university I learned most of the computer science fundamentals like algorithm and data structure, operating system, and networking.
+            I’m a fresh graduate from Universitas Komputer Indonesia majoring in computer science. I like to explore and try new things from language, framework, concept, tools, and many others. I especially love when figuring out how thing work while learning.
             <br /><br />
-            In the past two years, I spent most of my time learning web development (mostly backend stuff), android development, and machine learning. After a while, I realized I can bring them together and build something more powerful. I believe machine learning can bring web and android apps to the next level.
+            In the past two years, I spent most of my time learning web development, android, and machine learning. I've built several projects including websites, android apps, or machine learning models. Recently I tried to combine machine learning with web or android app.  I think it's pretty awesome to build web or android app powered by machine learning.
             <br /><br />
             Aside from software development, I am interest in football, listening to music, playing Dota 2, and reading manga.
-            <br /><br /><br />
-            <a href="mailto:erwintobing15@gmail.com" style={{textDecoration: 'none' }}>erwintobing15@gmail.com</a>
+            <br /><br />
+            Reach out to me <a href="mailto:erwintobing15@gmail.com" style={{textDecoration: 'none' }}>erwintobing15@gmail.com</a>
           </p>
         </Col>
       </Row>
