@@ -7,7 +7,9 @@ import Card from 'react-bootstrap/Card'
 import {
   row,
   col,
-  right
+  right,
+  projectImage,
+  projectImageDesc
 } from './index.module.css'
 import Img from 'gatsby-image'
 
@@ -18,24 +20,48 @@ const IndexPage = ({ data }) => {
       <Row className={row}>
         <Col xs={12} md={6} className={col}>
           <Card>
-            <Img fluid={data.dotaImage.childImageSharp.fluid } />
+            <div className={projectImage}>
+              <Img fluid={data.dotaImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>Dota2Web</h2>
+                <p>Recommendation System | Match Prediction |  Website  <br/> Django | Neural Network | Association Rules</p>
+              </div>
+            </div>
           </Card>
         </Col>
         <Col xs={12} md={6} className={col} className={right}>
           <Card>
-            <Img fluid={data.daimatusImage.childImageSharp.fluid } />
+            <div className={projectImage}>
+              <Img fluid={data.daimatusImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>Daimatus</h2>
+                <p>Learning Platform | Fullstack Website | PHP Native <br/> HTML | CSS | JS | Bootstrap</p>
+              </div>
+            </div>
           </Card>
         </Col>
       </Row>
       <Row className={row}>
         <Col xs={12} md={6} className={col}>
           <Card>
-            <Img fluid={data.deteksiImage.childImageSharp.fluid } />
+            <div className={projectImage}>
+              <Img fluid={data.deteksiImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>Deteksi Pantun Puisi</h2>
+                <p>Website | Django | Sentiment Analysis | SVM</p>
+              </div>
+            </div>
           </Card>
         </Col>
         <Col xs={12} md={6} className={col} className={right}>
           <Card>
-            <Img fluid={data.analyzerImage.childImageSharp.fluid } />
+            <div className={projectImage}>
+              <Img fluid={data.analyzerImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>C++ Analyzer</h2>
+                <p>Generate tokens from C++ object language <br /> Website | PHP Native | Bootstrap</p>
+              </div>
+            </div>
           </Card>
         </Col>
       </Row>

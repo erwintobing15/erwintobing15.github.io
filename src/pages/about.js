@@ -142,7 +142,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Codeigniter
                 </h5>
-                <p>First web framework I used to learn backend stuff like json, API, and web services</p>
+                <p>First web framework I used while learning backend stuff like json, API, and web services</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
