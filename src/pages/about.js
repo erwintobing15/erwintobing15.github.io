@@ -22,10 +22,21 @@ import {
   faJs,
   faPhp,
   faPython,
+  faBootstrap,
+  faReact,
+  faNode,
+  faEnvira,
+  faJava,
+  faAndroid,
+  faGitAlt,
+  faGithub,
+  faGoogle
 } from "@fortawesome/free-brands-svg-icons"
 import {
   faCode,
-  faBrain
+  faBrain,
+  faDatabase,
+  faFire
 } from "@fortawesome/free-solid-svg-icons"
 
 
@@ -40,7 +51,7 @@ const AboutPage = ({ data }) => {
           <h3>Hello, I'm Erwin</h3>
           <br />
           <p >
-            I’m a fresh graduate from Universitas Komputer Indonesia majoring in computer science. I like to explore and try new things from language, framework, concept, tools, and many others. I especially love when figuring out how thing work while learning.
+            I’m a fresh graduate from Universitas Komputer Indonesia majoring in computer science. I like to explore and try new things from language, framework, concept, tools, and many others. I especially really love it when i figure out how things work while learning.
             <br /><br />
             In the past two years, I spent most of my time learning web development, android, and machine learning. I've built several projects including websites, android apps, or machine learning models. Recently I tried to combine machine learning with web or android app.  I think it's pretty awesome to build web or android app powered by machine learning.
             <br /><br />
@@ -52,45 +63,30 @@ const AboutPage = ({ data }) => {
       </Row>
       <hr style={{ marginTop: '3rem' }}/>
       <div className={journey}>
-        <h3>My Learning Journey So Far</h3>
-
+        <h3>My Journey So Far</h3>
+        <br />
           <Timeline position="alternate">
             <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                align="right"
-                variant="body2"
-                color="text.secondary"
-              >
-                9:30 am
-              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot>
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
                   <FontAwesomeIcon icon={faCode} size='lg'/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <h5>
-                  C++
+                  Pascal & C++
                 </h5>
-                <p>I remember C++ is the first language i use to learn algorithm</p>
+                <p>The languages I used to learn algorithm and data structure</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
-              <TimelineOppositeContent
-                sx={{ m: 'auto 0' }}
-                variant="body2"
-                color="text.secondary"
-              >
-                10:00 am
-              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot color="primary">
-                  <FontAwesomeIcon icon={faHtml5} size='lg'/>
-                  <FontAwesomeIcon icon={faCss3} size='lg'/>
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faHtml5} size='lg' color="#CD5C5C"/>
+                  <FontAwesomeIcon icon={faCss3} size='lg' color="#264de4"/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
@@ -98,31 +94,32 @@ const AboutPage = ({ data }) => {
                 <h5>
                   HTML & CSS
                 </h5>
-                <p>Learning static web following my university curriculum</p>
+                <p>Learn static web and the first time I hosted a website online</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot color="primary" variant="outlined">
-                  <FontAwesomeIcon icon={faJs} size='lg'/>
-                  <FontAwesomeIcon icon={faPhp} size='lg'/>
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faJs} size='lg' color="#f0db4f"/>
+                  <FontAwesomeIcon icon={faPhp} size='lg' color='#232531'/>
+                  <FontAwesomeIcon icon={faDatabase} size='lg' color='#8993be'/>
                 </TimelineDot>
-                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <h5>
-                  JS & PHP
+                  JS & PHP & MySQL
                 </h5>
-                <p>Learning dinamic website with JS and my first server side language with PHP</p>
+                <p>Learn dinamic website and working with database creating CRUD application</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineSeparator>
-                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                <TimelineDot color="secondary">
-                  <FontAwesomeIcon icon={faPython} size='lg'/>
-                  <FontAwesomeIcon icon={faBrain} size='lg'/>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faPython} size='lg' color='#4584b6'/>
+                  <FontAwesomeIcon icon={faBrain} size='lg' color='#'/>
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
@@ -130,11 +127,120 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Python & Machine Learning
                 </h5>
-                <p>Start learning python because i'm curious about machine learning</p>
+                <p>Start learning because I'm curious what is machine learning</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faFire} size='lg' color="#DD4814"/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  Codeigniter
+                </h5>
+                <p>First web framework I used to learn backend stuff like json, API, and web services</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faGitAlt} size='lg' color='#f34f29'/>
+                  <FontAwesomeIcon icon={faGithub} size='lg' color='#171515 '/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  Git & Github
+                </h5>
+                <p>Learn version control local and remote to manage my code</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faBootstrap} size='lg' color='#563d7c'/>
+                  <FontAwesomeIcon icon={faReact} size='lg' color='#242443'/>
+                  <FontAwesomeIcon icon={faNode} size='lg' color='#3c873a'/>
+                  <FontAwesomeIcon icon={faEnvira} size='lg' color='#6cc24a'/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  MERN
+                </h5>
+                <p>Get deeper and try to learn MERN stack including bootstrap, react, node js, express js, and mongoDB</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faJava} size='lg' color="#5382a1"/>
+                  <FontAwesomeIcon icon={faAndroid} size='lg' color="#a4c639 "/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  Android Native & Java
+                </h5>
+                <p>Learn android and java to complete my volunteer assignment</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faPython} size='lg' color='#092e20'/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  Django
+                </h5>
+                <p>Learn fullstack web development with python framework Django</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faDatabase} size='lg' color="#5382a1"/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  Data Mining
+                </h5>
+                <p>Learn association rules from data mining to help completing my final year project</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot variant="outlined" style={{ padding: '0.5rem'}}>
+                  <FontAwesomeIcon icon={faGoogle} size='lg' color='#663399'/>
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: '12px', px: 2 }}>
+                <h5>
+                  GatsbyJS
+                </h5>
+                <p>Learn fast static web framework gatsby to make my web porfolio</p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
-
       </div>
     </Layout>
   )
