@@ -51,11 +51,11 @@ const AboutPage = ({ data }) => {
           <h3>Hello, I'm Erwin</h3>
           <br />
           <p >
-            I’m a fresh graduate from Universitas Komputer Indonesia majoring in computer science. I like to explore and try new things from language, framework, concept, tools, and many others. I especially really love it when i figure out how things work while learning.
+            I’m a fresh graduate from Universitas Komputer Indonesia majoring in computer science. I like to explore and try new things from language, framework, concepts, tools, and many others. I especially really love it when I figure out how things work while learning.
             <br /><br />
-            In the past two years, I spent most of my time learning web development, android, and machine learning. I've built several projects including websites, android apps, or machine learning models. Recently I tried to combine machine learning with web or android app.  I think it's pretty awesome to build web or android app powered by machine learning.
+            I spent most of my time learning web development, android, or machine learning. I've worked on several projects like a website, android app, or machine learning model. Recently I tried to combine machine learning with web or android app.  I think it's pretty awesome to build a web or android app powered by machine learning.
             <br /><br />
-            Aside from software development, I am interest in football, listening to music, playing Dota 2, and reading manga.
+            Aside from software development, I am interested in football, watching youtube, listening to music, playing Dota 2, and reading comics.
             <br /><br />
             Reach out to me <a href="mailto:erwintobing15@gmail.com" style={{textDecoration: 'none' }}>erwintobing15@gmail.com</a>
           </p>
@@ -94,7 +94,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   HTML & CSS
                 </h5>
-                <p>Learn static web and the first time I hosted a website online</p>
+                <p>Learn static web and try to host a website online</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -111,7 +111,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   JS & PHP & MySQL
                 </h5>
-                <p>Learn dinamic website and working with database creating CRUD application</p>
+                <p>Learn dynamic website and work with database creating a CRUD application</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -127,7 +127,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Python & Machine Learning
                 </h5>
-                <p>Start learning because I'm curious what is machine learning</p>
+                <p>Start learning because I'm curious what machine learning is</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -142,7 +142,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Codeigniter
                 </h5>
-                <p>First web framework I used while learning backend stuff like json, API, and web services</p>
+                <p>The first web framework I used while learning backend stuff like JSON, API, and web service</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -176,7 +176,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   MERN
                 </h5>
-                <p>Get deeper and try to learn MERN stack including bootstrap, react, node js, express js, and mongoDB</p>
+                <p>Get deeper and try to learn MERN stack with technologies like Bootstrap, React, Node js, Express js, and MongoDB</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -207,7 +207,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Django
                 </h5>
-                <p>Learn fullstack web development with python framework Django</p>
+                <p>Learn full stack web development with python framework Django</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -222,7 +222,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Data Mining
                 </h5>
-                <p>Learn association rules from data mining to help completing my final year project</p>
+                <p>Learn association rules from data mining to help complete my final year project</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -237,7 +237,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   GatsbyJS
                 </h5>
-                <p>Learn fast static web framework gatsby to make my web porfolio</p>
+                <p>Learn fast static web framework gatsby to make my web portfolio</p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
