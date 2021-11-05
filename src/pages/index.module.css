@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.row {
+/* .row {
   padding-top: 1rem;
 }
 
 .col {
   padding-left: 1rem;
   padding-right: 1rem;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .right {
