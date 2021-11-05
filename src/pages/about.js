@@ -94,7 +94,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   HTML & CSS
                 </h5>
-                <p>Learn static web and try to host a website online</p>
+                <p>Next, I learned static web and try to host a website online</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -111,7 +111,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   JS & PHP & MySQL
                 </h5>
-                <p>Learn dynamic website and work with database creating a CRUD application</p>
+                <p>Move on to learn dynamic website and work with database creating a CRUD application</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -158,7 +158,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Git & Github
                 </h5>
-                <p>Learn version control local and remote to manage my code</p>
+                <p>Get to understand version control to manage my code</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -192,7 +192,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Android Native & Java
                 </h5>
-                <p>Learn android and java to complete my volunteer assignment</p>
+                <p>I used android native with java to complete my volunteer project</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -207,7 +207,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Django
                 </h5>
-                <p>Learn full stack web development with python framework Django</p>
+                <p>Aside from machine learning, I realized python could be used for web backend frameworks like Django</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -222,7 +222,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Data Mining
                 </h5>
-                <p>Learn association rules from data mining to help complete my final year project</p>
+                <p>I learned association rules from data mining to help complete my final year project</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -237,7 +237,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   GatsbyJS
                 </h5>
-                <p>Learn fast static web framework gatsby to make my web portfolio</p>
+                <p>Get to understand gatsby fast to make this portfolio web</p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
