@@ -22,10 +22,32 @@ const IndexPage = ({ data }) => {
         <Col xs={12} md={6} className={col}>
           <Card>
             <div className={projectImage}>
-              <Img fluid={data.dotaImage.childImageSharp.fluid } />
+              <Img fluid={data.disposisiImage.childImageSharp.fluid } />
               <div className={projectImageDesc}>
-                <h2>Dota2Web</h2>
-                <p>Recommendation System | Match Prediction |  Website  <br/> Django | Neural Network | Association Rules</p>
+                <h2>Disposisi</h2>
+                <p>Saving Letters | Mobile  <br/> Java | Android Studio | MySQL</p>
+                <Link to='/'>
+                  <Button variant="outline-light">
+                    <strong>Detail</strong>
+                  </Button>
+                </Link>
+                {' '}
+                <Link to='https://github.com/erwintobing15/Disposisi'>
+                  <Button variant="outline-light">
+                    <strong>Source Code</strong>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col xs={12} md={6} className={col} className={right}>
+          <Card>
+            <div className={projectImage}>
+              <Img fluid={data.daimatusImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>Dota2web</h2>
+                <p>Website | Recommendation System | Match Prediction <br/> Machine Learning | Association Rules | Django | Python</p>
                 <Link to='/'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
@@ -47,7 +69,9 @@ const IndexPage = ({ data }) => {
             </div>
           </Card>
         </Col>
-        <Col xs={12} md={6} className={col} className={right}>
+      </Row>
+      <Row className={row} style={{ marginTop:'1rem'}}>
+        <Col xs={12} md={6} className={col}>
           <Card>
             <div className={projectImage}>
               <Img fluid={data.daimatusImage.childImageSharp.fluid } />
@@ -67,6 +91,34 @@ const IndexPage = ({ data }) => {
                 </Link>
                 {' '}
                 <Link to='https://github.com/erwintobing15/daimatus'>
+                  <Button variant="outline-light">
+                    <strong>Source Code</strong>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col xs={12} md={6} className={col} className={right}>
+          <Card>
+            <div className={projectImage}>
+              <Img fluid={data.analyzerImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>C++ Analyzer</h2>
+                <p>Generate tokens from C++ object language <br /> Website | PHP Native | Bootstrap</p>
+                <Link to='/'>
+                  <Button variant="outline-light">
+                    <strong>Detail</strong>
+                  </Button>
+                </Link>
+                {' '}
+                <Link to='https://cppanalyzer.000webhostapp.com/'>
+                  <Button variant="outline-light">
+                    <strong>Live Demo</strong>
+                  </Button>
+                </Link>
+                {' '}
+                <Link to='https://github.com/erwintobing15/cpp-analyzer'>
                   <Button variant="outline-light">
                     <strong>Source Code</strong>
                   </Button>
@@ -108,23 +160,23 @@ const IndexPage = ({ data }) => {
         <Col xs={12} md={6} className={col} className={right}>
           <Card>
             <div className={projectImage}>
-              <Img fluid={data.analyzerImage.childImageSharp.fluid } />
+              <Img fluid={data.ikuliahImage.childImageSharp.fluid } />
               <div className={projectImageDesc}>
-                <h2>C++ Analyzer</h2>
-                <p>Generate tokens from C++ object language <br /> Website | PHP Native | Bootstrap</p>
+                <h2>iKuliah</h2>
+                <p>Mobile | Saving Grades, Credits, and Calculate GPA <br /> Java | Android Studio | SQLite</p>
                 <Link to='/'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>
                 </Link>
                 {' '}
-                <Link to='https://cppanalyzer.000webhostapp.com/'>
+                <Link to='https://play.google.com/store/apps/details?id=com.chupakubera.ipkuliah'>
                   <Button variant="outline-light">
                     <strong>Live Demo</strong>
                   </Button>
                 </Link>
                 {' '}
-                <Link to='https://github.com/erwintobing15/cpp-analyzer'>
+                <Link to='https://github.com/erwintobing15/iKuliah'>
                   <Button variant="outline-light">
                     <strong>Source Code</strong>
                   </Button>
@@ -148,7 +200,7 @@ export const query = graphql`
       }
     }
     dotaImage: file(
-      relativePath: { eq: "analyzer.png" }
+      relativePath: { eq: "dota2web.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1500, quality: 100) {
@@ -167,6 +219,24 @@ export const query = graphql`
     }
     analyzerImage: file(
       relativePath: { eq: "analyzer.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    disposisiImage: file(
+      relativePath: { eq: "disposisi.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1500, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ikuliahImage: file(
+      relativePath: { eq: "ikuliah.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1500, quality: 100) {
