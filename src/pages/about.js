@@ -94,7 +94,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   HTML & CSS
                 </h5>
-                <p>Next, I learned static web and try to host a website online</p>
+                <p>I learned static web and try to host a website online</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -176,7 +176,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   MERN
                 </h5>
-                <p>Get deeper and try to learn MERN stack with technologies like Bootstrap, React, Node js, Express js, and MongoDB</p>
+                <p>Get deeper and try to learn MERN stack with technologies such as Bootstrap, React, Node js, Express js, and MongoDB</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -192,7 +192,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Android Native & Java
                 </h5>
-                <p>I used android native with java to complete my volunteer project</p>
+                <p>I used Android Native with Java to complete my volunteer project</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -207,7 +207,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   Django
                 </h5>
-                <p>Aside from machine learning, I realized python could be used for web backend frameworks like Django</p>
+                <p>Aside from machine learning, I discovered python could be used for web backend frameworks like Django</p>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -237,7 +237,7 @@ const AboutPage = ({ data }) => {
                 <h5>
                   GatsbyJS
                 </h5>
-                <p>Get to understand gatsby fast to make this portfolio web</p>
+                <p>Trying out gatsby, a static web framework, to make this portfolio web</p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
