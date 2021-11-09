@@ -6,8 +6,6 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import {
-  row,
-  col,
   right,
   projectImage,
   projectImageDesc
@@ -18,8 +16,8 @@ import Img from 'gatsby-image'
 const IndexPage = ({ data }) => {
   return (
     <Layout pageTitle="">
-      <Row className={row}>
-        <Col xs={12} md={6} className={col}>
+      <Row>
+        <Col xs={12} md={6}>
           <Card>
             <div className={projectImage}>
               <Img fluid={data.disposisiImage.childImageSharp.fluid } />
@@ -41,12 +39,12 @@ const IndexPage = ({ data }) => {
             </div>
           </Card>
         </Col>
-        <Col xs={12} md={6} className={col} className={right}>
+        <Col xs={12} md={6} className={right}>
           <Card>
             <div className={projectImage}>
-              <Img fluid={data.daimatusImage.childImageSharp.fluid } />
+              <Img fluid={data.dotamagusImage.childImageSharp.fluid } />
               <div className={projectImageDesc}>
-                <h2>Dota2web</h2>
+                <h2>Dotamagus</h2>
                 <p>Website | Recommendation System | Match Prediction <br/> Machine Learning | Association Rules | Django | Python</p>
                 <Link to='/'>
                   <Button variant="outline-light">
@@ -54,13 +52,13 @@ const IndexPage = ({ data }) => {
                   </Button>
                 </Link>
                 {' '}
-                <Link to='https://github.com/erwintobing15/dota2web'>
+                <Link to='https://dotamagos.pythonanywhere.com/'>
                   <Button variant="outline-light">
                     <strong>Live Demo</strong>
                   </Button>
                 </Link>
                 {' '}
-                <Link to='https://github.com/erwintobing15/dota2web'>
+                <Link to='https://github.com/erwintobing15/dotamagus'>
                   <Button variant="outline-light">
                     <strong>Source Code</strong>
                   </Button>
@@ -70,8 +68,8 @@ const IndexPage = ({ data }) => {
           </Card>
         </Col>
       </Row>
-      <Row className={row} style={{ marginTop:'1rem'}}>
-        <Col xs={12} md={6} className={col}>
+      <Row style={{ marginTop:'1rem'}}>
+        <Col xs={12} md={6}>
           <Card>
             <div className={projectImage}>
               <Img fluid={data.daimatusImage.childImageSharp.fluid } />
@@ -99,7 +97,7 @@ const IndexPage = ({ data }) => {
             </div>
           </Card>
         </Col>
-        <Col xs={12} md={6} className={col} className={right}>
+        <Col xs={12} md={6} className={right}>
           <Card>
             <div className={projectImage}>
               <Img fluid={data.analyzerImage.childImageSharp.fluid } />
@@ -128,8 +126,8 @@ const IndexPage = ({ data }) => {
           </Card>
         </Col>
       </Row>
-      <Row className={row} style={{ marginTop:'1rem'}}>
-        <Col xs={12} md={6} className={col}>
+      <Row style={{ marginTop:'1rem'}}>
+        <Col xs={12} md={6}>
           <Card>
             <div className={projectImage}>
               <Img fluid={data.deteksiImage.childImageSharp.fluid } />
@@ -157,7 +155,7 @@ const IndexPage = ({ data }) => {
             </div>
           </Card>
         </Col>
-        <Col xs={12} md={6} className={col} className={right}>
+        <Col xs={12} md={6} className={right}>
           <Card>
             <div className={projectImage}>
               <Img fluid={data.ikuliahImage.childImageSharp.fluid } />
@@ -199,8 +197,8 @@ export const query = graphql`
         }
       }
     }
-    dotaImage: file(
-      relativePath: { eq: "dota2web.png" }
+    dotamagusImage: file(
+      relativePath: { eq: "dotamagus.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1500, quality: 100) {
