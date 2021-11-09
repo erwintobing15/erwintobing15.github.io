@@ -17,6 +17,7 @@ import {
   faGithub,
   faGooglePlay
 } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 
 export default function Header() {
@@ -68,6 +69,9 @@ export default function Header() {
           </Nav.Link>
           <Nav.Link href="https://play.google.com/store/apps/dev?id=6806142270433234239">
             <FontAwesomeIcon icon={faGooglePlay} size="lg" color="black"/>
+          </Nav.Link>
+          <Nav.Link href="mailto:erwintobing15@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} size="lg" color="black"/>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
