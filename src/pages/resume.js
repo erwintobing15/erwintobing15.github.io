@@ -2,7 +2,7 @@ import * as React from "react"
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import downloadFile from '../downloads/file.pdf'
+import downloadFile from '../downloads/resume.pdf'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
