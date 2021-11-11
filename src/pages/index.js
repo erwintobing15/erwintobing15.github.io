@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
               <div className={projectImageDesc}>
                 <h2>Dotamagus</h2>
                 <p>Website | Recommendation System | Match Prediction <br/> Machine Learning | Association Rules | Django | Python</p>
-                <Link to='/'>
+                <Link to='/project/dotamagus'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>
@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
               <div className={projectImageDesc}>
                 <h2>Daimatus</h2>
                 <p>Learning Platform | Fullstack Website | PHP Native <br/> HTML | CSS | JS | Bootstrap</p>
-                <Link to='/'>
+                <Link to='/project/daimatus'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>
@@ -104,7 +104,7 @@ const IndexPage = ({ data }) => {
               <div className={projectImageDesc}>
                 <h2>C++ Analyzer</h2>
                 <p>Generate tokens from C++ object language <br /> Website | PHP Native | Bootstrap</p>
-                <Link to='/'>
+                <Link to='/project/analyzer'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>
@@ -134,7 +134,7 @@ const IndexPage = ({ data }) => {
               <div className={projectImageDesc}>
                 <h2>Deteksi Pantun Puisi</h2>
                 <p>Website | Django | Sentiment Analysis | SVM</p>
-                <Link to='/'>
+                <Link to='/project/deteksi'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>
@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
               <div className={projectImageDesc}>
                 <h2>iKuliah</h2>
                 <p>Mobile | Saving Grades, Credits, and Calculate GPA <br /> Java | Android Studio | SQLite</p>
-                <Link to='/'>
+                <Link to='/project/ikuliah'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>
