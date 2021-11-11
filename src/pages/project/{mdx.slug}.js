@@ -7,15 +7,15 @@ import { projectStyle, listItem } from './{mdx.slug}.module.css'
 
 const ProjectDetail = ({ data }) => {
   return (
-    <Layout pageTitle="Disposisi | ">
+    <Layout pageTitle="Project Detail | ">
       <div className={projectStyle }>
         <MDXRenderer >
              {data.mdx.body}
         </MDXRenderer>
 
-        <br /><br /><hr /><br /><br />
+        <br /><hr /><br />
 
-        <h4>Project List</h4>
+        <h4>All Projects</h4>
         <ul >
           <li><Link to='/project/disposisi' className={listItem}>Disposisi</Link></li>
           <li><Link to='/project/dotamagus' className={listItem}>Dotamagus</Link></li>
