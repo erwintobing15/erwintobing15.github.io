@@ -7,8 +7,8 @@ import { projectStyle, listItem } from './{mdx.slug}.module.css'
 
 const ProjectDetail = ({ data }) => {
   return (
-    <Layout pageTitle="Project Detail | ">
-      <div className={projectStyle }>
+    <Layout pageTitle="Project Details | ">
+      <div className={projectStyle}>
         <MDXRenderer >
              {data.mdx.body}
         </MDXRenderer>

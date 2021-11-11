@@ -5,6 +5,15 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .project-style {
+    font-size: .95rem;
+  }
+  li {
+    font-size: .95rem;
+  }
+}
+
 li {
   padding-top: .3rem;
 }
