@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
               <div className={projectImageDesc}>
                 <h2>Disposisi</h2>
                 <p>Saving Letters | Mobile  <br/> Java | Android Studio | MySQL</p>
-                <Link to='/'>
+                <Link to='/project/disposisi'>
                   <Button variant="outline-light">
                     <strong>Detail</strong>
                   </Button>

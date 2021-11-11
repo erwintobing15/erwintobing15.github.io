@@ -28,5 +28,13 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `project`,
+        path: `${__dirname}/project`,
+      }
+    },
   ],
 };
