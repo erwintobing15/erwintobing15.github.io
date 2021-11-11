@@ -15,7 +15,7 @@ import Img from 'gatsby-image'
 
 const IndexPage = ({ data }) => {
   return (
-    <Layout pageTitle="">
+    <Layout pageTitle="" page="project">
       <Row>
         <Col xs={12} md={6}>
           <Card>

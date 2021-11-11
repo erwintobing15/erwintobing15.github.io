@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import Navbar from 'react-bootstrap/Navbar'
@@ -20,7 +20,8 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 
-export default function Header() {
+export default function Header({page}) {
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "icon.png" }) {
@@ -32,6 +33,7 @@ export default function Header() {
       }
     }
   `)
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top" className={navbar}>
       <Link to='/' style={{ textDecoration: 'none' }}>
@@ -50,16 +52,20 @@ export default function Header() {
         <Nav className="me-auto">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to='/' className="nav-link" className={menu}>Project</Link>
+              <Link to='/' className="nav-link" className={menu}
+                style={{color : (page == 'project') ? "#50CB93" : "" }}>Project</Link>
             </li>
             <li className="nav-item">
-              <Link to='/about' className="nav-link" className={menu}>About</Link>
+              <Link to='/about' className="nav-link" className={menu}
+                style={{color : (page == 'about') ? "#50CB93" : "" }}>About</Link>
             </li>
             <li className="nav-item">
-              <Link to='/resume' className="nav-link" className={menu}>Resume</Link>
+              <Link to='/resume' className="nav-link" className={menu}
+                style={{color : (page == 'resume') ? "#50CB93" : "" }}>Resume</Link>
             </li>
           </ul>
         </Nav>
+
         <Nav>
           <Nav.Link href="https://linkedin.com/in/erwin-tobing-04a0b119b">
             <FontAwesomeIcon icon={faLinkedin} size="lg" color="#0077b5"/>

@@ -42,7 +42,7 @@ import {
 
 const AboutPage = ({ data }) => {
   return (
-    <Layout pageTitle="About | ">
+    <Layout pageTitle="About | " page="about">
       <Row>
         <Col xs={12} md={4}>
           <Img fluid={data.profileImage.childImageSharp.fluid} />

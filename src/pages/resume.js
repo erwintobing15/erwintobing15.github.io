@@ -11,7 +11,7 @@ import { resume } from './resume.module.css'
 
 const ResumePage = ({ data }) => {
   return (
-    <Layout pageTitle="Resume | ">
+    <Layout pageTitle="Resume | " page="resume">
       <Row style={{ textAlign: 'center' }}>
         <Col xs={12} md={12} className={resume}>
           <Img fluid={data.resumeImage.childImageSharp.fluid}/>
