@@ -21,8 +21,8 @@ const ProjectDetail = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    mdx(id: {eq: "b5249918-fee1-530c-915f-93bcf12a26e2"}) {
+  query ($id: String) {
+    mdx(id: {eq: $id}) {
       body
     }
   }
