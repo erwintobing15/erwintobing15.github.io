@@ -4,3 +4,17 @@
     padding-left: 15%;
   }
 }
+
+li {
+  padding-top: .3rem;
+}
+
+.list-item {
+  color: black;
+  text-decoration: none;
+}
+
+.list-item:hover {
+  color: #50CB93;
+  text-decoration-line: underline;
+}
