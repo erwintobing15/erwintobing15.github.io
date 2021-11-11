@@ -2,16 +2,13 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../../components/layout'
+import { projectStyle  } from './{mdx.slug}.module.css'
 
-const pageStyles = {
-  paddingRight: '15%',
-  paddingLeft: '15%'
-}
 
 const ProjectDetail = ({ data }) => {
   return (
     <Layout pageTitle="Disposisi | ">
-      <div style={pageStyles}>
+      <div className={projectStyle }>
         <MDXRenderer >
              {data.mdx.body}
         </MDXRenderer>
