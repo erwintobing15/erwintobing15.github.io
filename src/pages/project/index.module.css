@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media only screen and (max-width: 600px) {
+  .right {
+    padding-top: 1rem;
+  }
+}
+
+.project-image:hover .project-image-desc {
+  opacity: 1;
+  background-color: #50CB93;
+  /* background-color: black; */
+}
+
+.project-image img,
+.project-image-desc {
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+
+.project-image-desc {
+  padding-top: 10%;
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .project-image-desc {
+    padding-top: 15%;
+    font-size: 1.2rem;
+  }
+}

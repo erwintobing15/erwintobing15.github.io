@@ -52,7 +52,7 @@ export default function Header({page}) {
         <Nav className="me-auto">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to='/' className="nav-link" className={menu}
+              <Link to='/project' className="nav-link" className={menu}
                 style={{color : (page == 'project') ? "#50CB93" : "" }}>Project</Link>
             </li>
             <li className="nav-item">
