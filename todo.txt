@@ -1,4 +1,3 @@
 (-) optimize how to import google font
-(-) deleting unused package 
 
 npm run deploy

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import Navbar from 'react-bootstrap/Navbar'
@@ -53,15 +53,15 @@ export default function Header({page}) {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link to='/project' className="nav-link" className={menu}
-                style={{color : (page == 'project') ? "#50CB93" : "" }}>Project</Link>
+                style={{color : (page === 'project') ? "#50CB93" : "" }}>Project</Link>
             </li>
             <li className="nav-item">
               <Link to='/about' className="nav-link" className={menu}
-                style={{color : (page == 'about') ? "#50CB93" : "" }}>About</Link>
+                style={{color : (page === 'about') ? "#50CB93" : "" }}>About</Link>
             </li>
             <li className="nav-item">
               <Link to='/resume' className="nav-link" className={menu}
-                style={{color : (page == 'resume') ? "#50CB93" : "" }}>Resume</Link>
+                style={{color : (page === 'resume') ? "#50CB93" : "" }}>Resume</Link>
             </li>
           </ul>
         </Nav>
