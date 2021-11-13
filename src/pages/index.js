@@ -1,28 +1,40 @@
 import * as React from 'react'
-import { graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 import Header from '../components/header'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
 import {
-
+  container,
+  content,
+  head,
+  parag
 } from './index.module.css'
 import Img from 'gatsby-image'
 
-
 const IndexPage = () => {
   return (
-    <div>
+    <>
+      <title>Erwin Tobing</title>
       <Header page=""/>
-      <Row>
-        <Col xs={12} md={6}>
-
-        </Col>
-        <Col xs={12} md={6}>
-
-        </Col>
-      </Row>
-    </div>
+      <Container fluid='true' className={container}>
+        <div className={content}>
+          <h1 className={head}>Hi, I'm Erwin.<br/>A Software Developer.</h1>
+        </div>
+        <p className={parag}>I'm a software enthusiast that like to explore and trying out new things.</p>
+        <p>
+          <Link to='/about'>
+            <Button variant="outline-light" size="lg">
+              <strong>More</strong>
+            </Button>
+          </Link>{' '}
+          <Link to='/project'>
+            <Button variant="outline-light" size="lg">
+              <strong>Project</strong>
+            </Button>
+          </Link>
+        </p>
+      </Container>
+    </>
   )
 }
 

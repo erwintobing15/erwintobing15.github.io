@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
+
+.container {
+  background-color: #50CB93;
+  min-height: 100vh;
+  max-height: 100%;
+  text-align: center;
+}
+
+.content {
+  padding-top: 16%;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding-top: 8rem;
+  }
+}
+
+
+.head {
+  font-family: 'Spectral', serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.parag {
+  color: #fff;
+  font-size: 1.3rem;
+}
