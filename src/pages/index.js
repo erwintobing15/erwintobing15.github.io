@@ -9,7 +9,8 @@ import {
   head,
   parag
 } from './index.module.css'
-import Img from 'gatsby-image'
+import FadeIn from 'react-fade-in'
+
 
 const IndexPage = () => {
   return (
@@ -17,22 +18,24 @@ const IndexPage = () => {
       <title>Erwin Tobing</title>
       <Header page=""/>
       <Container fluid='true' className={container}>
-        <div className={content}>
-          <h1 className={head}>Hi, I'm Erwin.<br/>A Software Developer.</h1>
-        </div>
-        <p className={parag}>I'm a software enthusiast that like to explore and trying out new things.</p>
-        <p>
-          <Link to='/about'>
-            <Button variant="outline-light" size="lg">
-              <strong>More</strong>
-            </Button>
-          </Link>{' '}
-          <Link to='/project'>
-            <Button variant="outline-light" size="lg">
-              <strong>Project</strong>
-            </Button>
-          </Link>
-        </p>
+        <FadeIn delay='100'>
+          <div className={content}>
+            <h1 className={head}>Hi, I'm Erwin.<br/>A Software Developer.</h1>
+          </div>
+          <p className={parag}>I'm a software enthusiast that like to explore and trying out new things.</p>
+          <p>
+            <Link to='/about'>
+              <Button variant="outline-light" size="lg">
+                <strong>More</strong>
+              </Button>
+            </Link>{' '}
+            <Link to='/project'>
+              <Button variant="outline-light" size="lg">
+                <strong>Project</strong>
+              </Button>
+            </Link>
+          </p>
+        </FadeIn>
       </Container>
     </>
   )
