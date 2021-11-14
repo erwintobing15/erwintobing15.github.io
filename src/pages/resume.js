@@ -32,7 +32,7 @@ const ResumePage = ({ data }) => {
 
 export const query = graphql`
   query {
-    resumeImage: file(relativePath: { eq: "resume.jpg" }) {
+    resumeImage: file(relativePath: { eq: "resume.png" }) {
       childImageSharp {
         fluid(maxWidth: 612, maxHeight: 792, quality: 100) {
           ...GatsbyImageSharpFluid
