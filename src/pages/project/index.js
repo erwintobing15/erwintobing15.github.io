@@ -20,28 +20,6 @@ const IndexPage = ({ data }) => {
         <Col xs={12} md={6}>
           <Card>
             <div className={projectImage}>
-              <Img fluid={data.disposisiImage.childImageSharp.fluid } />
-              <div className={projectImageDesc}>
-                <h2>Disposisi</h2>
-                <p>Saving Letters | Mobile  <br/> Java | Android Studio | MySQL</p>
-                <Link to='/project/disposisi'>
-                  <Button variant="outline-light">
-                    <strong>Detail</strong>
-                  </Button>
-                </Link>
-                {' '}
-                <Link to='https://github.com/erwintobing15/Disposisi'>
-                  <Button variant="outline-light">
-                    <strong>Source Code</strong>
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </Card>
-        </Col>
-        <Col xs={12} md={6} className={right}>
-          <Card>
-            <div className={projectImage}>
               <Img fluid={data.dotamagusImage.childImageSharp.fluid } />
               <div className={projectImageDesc}>
                 <h2>Dotamagus</h2>
@@ -59,6 +37,28 @@ const IndexPage = ({ data }) => {
                 </Link>
                 {' '}
                 <Link to='https://github.com/erwintobing15/dotamagus'>
+                  <Button variant="outline-light">
+                    <strong>Source Code</strong>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        <Col xs={12} md={6} className={right}>
+          <Card>
+            <div className={projectImage}>
+              <Img fluid={data.disposisiImage.childImageSharp.fluid } />
+              <div className={projectImageDesc}>
+                <h2>Disposisi</h2>
+                <p>Saving Letters | Mobile  <br/> Java | Android Studio | MySQL</p>
+                <Link to='/project/disposisi'>
+                  <Button variant="outline-light">
+                    <strong>Detail</strong>
+                  </Button>
+                </Link>
+                {' '}
+                <Link to='https://github.com/erwintobing15/Disposisi'>
                   <Button variant="outline-light">
                     <strong>Source Code</strong>
                   </Button>
