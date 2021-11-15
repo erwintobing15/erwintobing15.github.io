@@ -24,14 +24,14 @@ const IndexPage = () => {
           </div>
           <p className={parag}>I'm a software enthusiast that like to explore and trying out new things.</p>
           <p>
-            <Link to='/about'>
-              <Button variant="outline-light" size="lg">
-                <strong>More</strong>
-              </Button>
-            </Link>{' '}
             <Link to='/project'>
               <Button variant="outline-light" size="lg">
                 <strong>Project</strong>
+              </Button>
+            </Link>{' '}
+            <Link to='/about'>
+              <Button variant="outline-light" size="lg">
+                <strong>About</strong>
               </Button>
             </Link>
           </p>

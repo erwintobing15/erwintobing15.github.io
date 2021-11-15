@@ -17,8 +17,8 @@ const ProjectDetail = ({ data }) => {
 
         <h4>All Projects</h4>
         <ul >
-          <li><Link to='/project/disposisi' className={listItem}>Disposisi</Link></li>
           <li><Link to='/project/dotamagus' className={listItem}>Dotamagus</Link></li>
+          <li><Link to='/project/disposisi' className={listItem}>Disposisi</Link></li>
           <li><Link to='/project/daimatus' className={listItem}>Daimatus</Link></li>
           <li><Link to='/project/analyzer' className={listItem}>C++ Analyzer</Link></li>
           <li><Link to='/project/deteksi' className={listItem}>Deteksi Pantun Puisi</Link></li>
